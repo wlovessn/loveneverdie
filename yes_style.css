@@ -1,0 +1,128 @@
+body {
+    background-color: #57bffc;
+}
+.everything{
+    display: flex;
+    justify-content: center;
+}
+
+.writing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    
+}
+/* Position the "No" button absolutely within body */
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    /* Smooth movement */
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    /* Smooth movement */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text {
+    font-family: 'Nunito';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contain{
+display: flex;
+align-items: first baseline;
+justify-content: center;
+}
+.text-area {
+padding: 0.8rem;
+width: 80%;
+border: 2px solid rgb(65, 96, 236);
+background: #a6d5f0;
+border-radius: 8px;
+font-size: 20px;
+outline: none;
+color: #000000;
+}
+
+button{
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid rgb(241, 118, 221);
+   background: transparent;
+   color: #ffffff;
+   cursor: pointer;
+   overflow: hidden;
+   text-transform: uppercase;
+}
+span{
+background: #FFB6C1;
+height: 100px;
+width: 0;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
